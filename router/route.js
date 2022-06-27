@@ -25,7 +25,7 @@ route.get("/createpaypalpayment", async (req, res) => {
 		/// "https://us-central1-paypal.cloudfunctions.net/paypalTestPaymentExecute",
 		///
 		redirect_urls: {
-			return_url: `http://paypal-nodejs-daisy.herokuapp.com/execute?amount=${amount}&currency=${currency}`,
+			return_url: `https://paypal-nodejs-daisy.herokuapp.com/execute?amount=${amount}&currency=${currency}`,
 			cancel_url: "http://cancel.url"
 		},
 		transactions: [
